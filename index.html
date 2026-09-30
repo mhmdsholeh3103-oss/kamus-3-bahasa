@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamus 3 Bahasa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>📖 Kamus 3 Bahasa</h1>
+        <p class="subtitle">Indonesia → Inggris • Jepang • Mandarin</p>
+
+        <div class="search-box">
+            <input 
+                type="text" 
+                id="searchInput" 
+                placeholder="Masukkan kata, contoh: makan"
+                onkeyup="cariKata()"
+            >
+            <button onclick="cariKata()">Cari</button>
+            <button class="reset" onclick="resetKamus()">Reset</button>
+        </div>
+
+        <div id="hasil">
+            <p class="petunjuk">
+                Ketik kata bahasa Indonesia untuk mencari terjemahan.
+            </p>
+        </div>
+
+        <div class="daftar">
+            <h2>Daftar Kata</h2>
+            <button onclick="tampilkanSemua()">Tampilkan Semua</button>
+        </div>
+
+        <div id="semuaKata"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
